@@ -1,10 +1,11 @@
-﻿using System;
+﻿using H1_The_firm.Controller;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace H1_The_firm.Controller
+namespace H1_The_firm.Model
 {
     /// <summary>
     /// The manager inherits from employee, however a manager has a phone number, 
@@ -15,7 +16,7 @@ namespace H1_The_firm.Controller
     {
         private protected string _phoneNumber = "";
 
-        internal Manager(string firstName, string lastName, string ssn, string phoneNumber) : base (firstName, lastName, ssn)
+        internal Manager(string firstName, string lastName, string ssn, string phoneNumber) : base(firstName, lastName, ssn)
         {
             _phoneNumber = phoneNumber;
         }
@@ -27,7 +28,7 @@ namespace H1_The_firm.Controller
         /// <returns></returns>
         public override string ToString()
         {
-            return $"{base.ToString()} Phone: {_phoneNumber}"; 
+            return $"{base.ToString()} Phone: {_phoneNumber}";
         }
     }
 }

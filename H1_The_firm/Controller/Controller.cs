@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using H1_The_firm.Model;
 
 namespace H1_The_firm.Controller
 {
